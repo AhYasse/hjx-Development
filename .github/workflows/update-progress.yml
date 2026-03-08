@@ -1,0 +1,33 @@
+name: Update Phase Progress
+
+on:
+  pull_request:
+    types: [closed]
+    branches: [main]
+
+jobs:
+  update-progress:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Update progress files
+      run: |
+        # Extract task info from PR description
+        PR_TITLE="${{ github.event.pull_request.title }}"
+        PR_NUMBER="${{ github.event.pull_request.number }}"
+        
+        # Simple script to update progress
+        echo "Updating progress for PR #$PR_NUMBER: $PR_TITLE"
+        
+        # You can add more sophisticated automation here
+        
+    - name: Commit updates
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add phases/*/progress.md
+        git commit -m "Update phase progress [skip ci]" || exit 0
+        git push

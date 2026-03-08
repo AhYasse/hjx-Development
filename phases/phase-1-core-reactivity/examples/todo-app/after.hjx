@@ -1,0 +1,21 @@
+// New version v0.2
+state:
+  todos = ["Learn HJX", "Build app"]
+  newTodo = ""
+
+computed:
+  todoCount = todos.length
+  hasTodos = todos.length > 0
+
+handlers:
+  addTodo:
+    set todos.push(newTodo)  // Direct mutation!
+    set newTodo = ""
+
+  deleteTodo(index):
+    set todos.splice(index, 1)  // Direct splice!
+
+  toggleAll:
+    batch:  // Batched updates
+      for todo in todos:
+        set todo.completed = !todo.completed

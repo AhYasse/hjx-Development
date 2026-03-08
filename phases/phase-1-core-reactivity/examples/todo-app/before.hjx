@@ -1,0 +1,12 @@
+// Old version v0.1
+state:
+  todos = ["Learn HJX", "Build app"]
+  newTodo = ""
+
+handlers:
+  addTodo:
+    set todos = [...todos, newTodo]  // Manual spread
+    set newTodo = ""
+
+  deleteTodo(index):
+    set todos = todos.filter((_, i) => i !== index)
