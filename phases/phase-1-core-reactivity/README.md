@@ -11,8 +11,8 @@ Replace basic store with fine-grained reactivity while keeping zero runtime over
 
 | # | Task | Effort | Status | PR |
 |---|------|--------|--------|-----|
-| 1 | Signal tracking compiler | High | ✅ Done | [#42] |
-| 2 | Computed values | Medium | 🟡 In Progress | [#45] |
+| 1 | Signal tracking compiler | High | ✅ Done | [#46] |
+| 2 | Computed values | Medium | 🟡 In Progress | [#47] |
 | 3 | Context providers | Medium | ⏳ Planned | - |
 | 4 | Batched updates | Low | ⏳ Planned | - |
 | 5 | Array mutations | Medium | ⏳ Planned | - |
@@ -22,6 +22,6 @@ Replace basic store with fine-grained reactivity while keeping zero runtime over
 ### ✅ Completed Tasks
 
 #### Task 1: Signal Tracking Compiler Pass
-- **PR:** [#42](https://github.com/hjx-lang/hjx/pull/42)
+- **PR:** [#46](https://github.com/loayabdalslam/hjx/commit/)
 - **Implementation:** Created new compiler pass in `src/compiler/signal_codegen.ts`
 - **Test coverage:** 95%
