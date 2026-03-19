@@ -12,7 +12,7 @@ Replace basic store with fine-grained reactivity while keeping zero runtime over
 | # | Task | Effort | Status | PR |
 |---|------|--------|--------|-----|
 | 1 | Signal tracking compiler | High | ✅ Done | [#46] |
-| 2 | Computed values | Medium | ✅ Done  | [#47] |
+| 2 | Computed values | Medium | ✅ Done  | [#51] |
 | 3 | Context providers | Medium | 🟡 In Progress | - |
 | 4 | Batched updates | Low | ⏳ Planned | - |
 | 5 | Array mutations | Medium | ⏳ Planned | - |
