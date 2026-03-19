@@ -1,4 +1,8 @@
-# Computed Values
+# Task 2:  Computed Values
+**Status:** ✅ Completed  
+**Completion Date:** 2024-03-14
+
+## 📋 Description
 
 Computed values are derived state that automatically update when their dependencies change. They're perfect for calculations, transformations, and derived data.
 
