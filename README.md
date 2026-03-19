@@ -1,6 +1,6 @@
 # HJX - Unified UI Language
 
-[![Version](https://img.shields.io/badge/version-0.1.0--alpha-blue)](https://github.com/hjx-lang/hjx)
+[![Version](https://img.shields.io/badge/version-0.2.0--alpha-blue)](https://github.com/hjx-lang/hjx)
 [![Phase](https://img.shields.io/badge/phase-1%20Core%20Reactivity-green)](./phases/phase-1-core-reactivity)
 [![Discord](https://img.shields.io/discord/123456789)](https://discord.gg/hjx)
 
