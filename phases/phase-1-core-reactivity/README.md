@@ -21,7 +21,7 @@ Replace basic store with fine-grained reactivity while keeping zero runtime over
 
 ### ✅ Completed Tasks
 
-#### Task 2: Signal Tracking Compiler Pass
-- **PR:** [#46](https://github.com/loayabdalslam/hjx/commit/)
+#### Task 2: Computed values
+- **PR:** [#51](https://github.com/loayabdalslam/hjx/commit/)
 - **Implementation:** Created new compiler pass in `src/compiler/signal_codegen.ts`
 - **Test coverage:** 95%
